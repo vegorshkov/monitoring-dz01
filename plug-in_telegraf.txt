@@ -1,0 +1,297 @@
+Полный список входных плагинов Telegraf
+Вот перечисление всех плагинов, которые я смог идентифицировать, сгруппированных по категориям для удобства. Некоторые плагины имеют несколько имен или псевдонимов (например, cisco_telemetry_gnmi и gnmi).
+
+Аппаратное обеспечение и системы
+apcupsd — Мониторинг ИБП APC.
+
+bond — Мониторинг сетевых интерфейсов в режиме bonding.
+
+cgroup — Сбор метрик из control groups (cgroups).
+
+conntrack — Мониторинг таблицы отслеживания соединений netfilter.
+
+cpu — Сбор метрик использования процессора.
+
+disk — Сбор метрик использования дискового пространства.
+
+diskio — Сбор метрик ввода-вывода дисков (ранее назывался io).
+
+docker — Сбор метрик Docker-контейнеров.
+
+docker_log — Сбор логов Docker-контейнеров.
+
+ethtool — Сбор метрик сетевых интерфейсов с помощью ethtool.
+
+fail2ban — Сбор метрик из fail2ban.
+
+filestat — Сбор метрик файлов (размер, время модификации).
+
+hugepages — Сбор метрик об использовании больших страниц памяти (HugePages).
+
+infiniband — Сбор метрик из сети InfiniBand.
+
+intel_pmu — Сбор метрик Intel Performance Monitoring Unit.
+
+intel_powerstat — Сбор метрик энергопотребления Intel.
+
+intel_rdt — Сбор метрик Intel Resource Director Technology.
+
+ipmi_sensor — Сбор метрик из IPMI (Intelligent Platform Management Interface).
+
+ipset — Сбор метрик из наборов IP-адресов (ipset).
+
+ipvs — Сбор метрик из IP Virtual Server (ipvs).
+
+kernel — Сбор метрик ядра Linux из /proc/stat.
+
+linux_cpu — Сбор расширенных метрик CPU в Linux.
+
+lvm — Сбор метрик Logical Volume Manager (LVM).
+
+mdstat — Сбор метрик из Software RAID (/proc/mdstat).
+
+mem — Сбор метрик использования памяти.
+
+memcached — Сбор метрик Memcached.
+
+net — Сбор метрик сетевых интерфейсов.
+
+netflow — Сбор метрик из NetFlow/IPFIX/sFlow.
+
+netstat — Сбор метрик сетевых соединений.
+
+nfsclient — Сбор метрик клиента NFS.
+
+nftables — Сбор метрик из nftables.
+
+nvidia_smi — Сбор метрик NVIDIA GPU.
+
+procstat — Сбор метрик для процессов (PID, имя, CPU, память).
+
+processes — Сбор общих метрик процессов.
+
+prometheus — Сбор метрик с эндпоинтов Prometheus.
+
+proxmox — Сбор метрик из Proxmox VE.
+
+ras — Сбор метрик Reliability, Availability and Serviceability.
+
+sensors (или temp) — Сбор метрик температуры от датчиков.
+
+smart (или smartctl) — Сбор S.M.A.R.T. данных с дисков.
+
+system — Сбор метрик загрузки системы (load, uptime, users).
+
+systemd_units — Сбор статусов systemd юнитов.
+
+tail — Чтение и парсинг лог-файлов (заменил logparser).
+
+turbostat — Сбор метрик частоты и энергопотребления процессора.
+
+unbound — Сбор метрик DNS-резолвера Unbound.
+
+win_eventlog — Сбор событий из Windows Event Log.
+
+win_perf_counters — Сбор метрик из счетчиков производительности Windows.
+
+win_services — Сбор статусов Windows-служб.
+
+win_wmi — Сбор метрик через WMI (Windows Management Instrumentation).
+
+wireguard — Сбор метрик интерфейсов WireGuard.
+
+x509_cert — Сбор информации о сертификатах X.509.
+
+zfs — Сбор метрик ZFS.
+
+Базы данных
+aerospike — Сбор метрик Aerospike.
+
+clickhouse — Сбор метрик ClickHouse.
+
+couchbase — Сбор метрик Couchbase.
+
+cratedb — Сбор метрик CrateDB.
+
+elasticsearch — Сбор метрик Elasticsearch.
+
+influxdb — Сбор метрик InfluxDB.
+
+mongodb — Сбор метрик MongoDB.
+
+mysql — Сбор метрик MySQL/MariaDB.
+
+postgresql — Сбор метрик PostgreSQL.
+
+postgresql_extensible — Расширяемый сбор метрик PostgreSQL.
+
+rabbitmq — Сбор метрик RabbitMQ.
+
+redis — Сбор метрик Redis.
+
+redis_sentinel — Сбор метрик Redis Sentinel.
+
+rethinkdb — Сбор метрик RethinkDB.
+
+sql — Общий плагин для подключения к базам данных через SQL.
+
+sqlserver — Сбор метрик Microsoft SQL Server.
+
+vertica — Сбор метрик Vertica.
+
+Облачные сервисы
+aliyuncms — Alibaba Cloud Monitor Service.
+
+azure_monitor — Azure Monitor.
+
+cloud_pubsub — Google Cloud Pub/Sub.
+
+cloud_pubsub_push — Google Cloud Pub/Sub Push.
+
+cloudwatch — AWS CloudWatch.
+
+ecs — Amazon Elastic Container Service (ECS).
+
+firehose — AWS Kinesis Data Firehose (упоминается как внешний).
+
+gcs — Google Cloud Storage.
+
+kinesis_consumer — AWS Kinesis.
+
+openstack — OpenStack.
+
+stackdriver — Google Cloud Operations (Stackdriver).
+
+Очереди сообщений и стриминг
+amqp_consumer — RabbitMQ (AMQP) consumer.
+
+kafka_consumer — Apache Kafka consumer.
+
+kafka_consumer_legacy — Устаревший потребитель Kafka.
+
+mqtt_consumer — MQTT consumer.
+
+nats_consumer — NATS consumer.
+
+nsq_consumer — NSQ consumer.
+
+snmp_trap — SNMP trap receiver.
+
+HTTP и веб-сервисы
+apache — Сбор метрик Apache HTTP Server.
+
+bind — Сбор метрик DNS-сервера BIND.
+
+haproxy — Сбор метрик HAProxy.
+
+http — Сбор метрик с HTTP-эндпоинтов.
+
+http_listener_v2 — Второе поколение HTTP-слушателя (более гибкий).
+
+http_response — Мониторинг HTTP-ответов.
+
+influxdb_listener — Слушатель для приема данных в формате InfluxDB Line Protocol (заменил http_listener).
+
+jenkins — Сбор метрик Jenkins.
+
+jolokia — Устаревший плагин для JMX (заменен на jolokia2_agent и jolokia2_proxy).
+
+jolokia2_agent — Сбор JMX метрик с использованием Jolokia 2.
+
+jolokia2_proxy — Сбор JMX метрик через прокси Jolokia 2.
+
+kibana — Сбор метрик Kibana.
+
+logstash — Сбор метрик Logstash.
+
+nginx — Сбор метрик Nginx.
+
+nginx_plus — Сбор метрик Nginx Plus.
+
+nginx_plus_api — Сбор метрик через API Nginx Plus.
+
+nginx_sts — Сбор метрик Nginx Stream Status.
+
+nginx_upstream_check — Сбор метрик проверки апстримов Nginx.
+
+nginx_vts — Сбор метрик модуля Virtual Host Traffic Status для Nginx.
+
+phpfpm — Сбор метрик PHP-FPM.
+
+tomcat — Сбор метрик Tomcat.
+
+varnish — Сбор метрик Varnish Cache.
+
+Сетевые протоколы и инструменты
+cisco_telemetry_gnmi — Устаревший плагин (заменен на gnmi).
+
+cisco_telemetry_mdt — Cisco Model-Driven Telemetry.
+
+dns_query — Запросы DNS.
+
+gnmi — Сбор телеметрии по протоколу gNMI.
+
+jti_openconfig_telemetry — Juniper OpenConfig Telemetry.
+
+net_response — Мониторинг TCP/UDP-портов.
+
+ntpq — Сбор метрик от NTP через утилиту ntpq.
+
+ping — Мониторинг задержек и доступности хостов.
+
+snmp — Сбор метрик по SNMP.
+
+snmp_legacy — Устаревший SNMP-плагин.
+
+snmp_trap — Прием SNMP трапов.
+
+syslog — Прием системных логов.
+
+tacacs — Мониторинг сервера TACACS+.
+
+Файловая система и директории
+file — Чтение и парсинг данных из файла.
+
+filecount — Подсчет файлов в директории.
+
+directory_monitor — Мониторинг новых файлов в директории.
+
+tail — Чтение логов (аналог tail -f).
+
+Специализированные и прочие
+exec — Выполнение внешних команд.
+
+execd — Выполнение внешних программ как служба.
+
+internal — Сбор метрик самого Telegraf.
+
+internet_speed — Тест скорости интернета (Speedtest).
+
+ipmi_sensor — Сбор IPMI-данных.
+
+mock — Плагин для генерации тестовых метрик.
+
+openweathermap — Погода от OpenWeatherMap.
+
+radius — Мониторинг времени ответа RADIUS.
+
+salesforce — Сбор метрик из Salesforce.
+
+sflow — Прием sFlow.
+
+suricata — Сбор метрик IDS/IPS Suricata.
+
+systemd_units — Мониторинг systemd-юнитов.
+
+teamspeak — Сбор метрик Teamspeak3.
+
+upsd — Мониторинг UPS через Network UPS Tools (NUT).
+
+webhooks — Прием веб-хуков (GitHub, Rollbar и др.).
+
+whois — Сбор информации WHOIS для доменов.
+
+wireguard — Сбор метрик WireGuard.
+
+zookeeper — Сбор метрик Apache ZooKeeper.
+
